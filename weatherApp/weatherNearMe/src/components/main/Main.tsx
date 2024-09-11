@@ -45,6 +45,7 @@ async function fetchWeatherData(city: string) {
         if (city.trim()) {
             fetchWeatherData(city);
           }
+      
     }
 
 
