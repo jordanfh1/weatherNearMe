@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <Header title="My App Title" />
+    <Header title="Weather Near Me" />
       <Main />
       <Footer />
         

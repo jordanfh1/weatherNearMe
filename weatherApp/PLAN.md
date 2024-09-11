@@ -9,8 +9,12 @@
 
 ## Components
 
-- Barebones - nothing wild 
-- Header
+Prerequisite
+ 
+ Barebones - nothing wild 
+
+
+- Header - basic thing 
 - Main - in here we'll have the entire funcationality of the project - enter city and find the weather there 
 - Search bar - is the field for city name 
 - Button - leads to new page and searches city name in the API and will return info onto the next page
