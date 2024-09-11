@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer>
-        <p>Weather Near Me</p>
+        <p>Weather Near Meeee!</p>
         </footer>
     );
     }
