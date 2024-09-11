@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import { useState } from "react";
+import styles from './Main.module.css';
 
 export default function Main() {
     const [city, setCity] = useState<string>("");
@@ -44,8 +45,9 @@ async function fetchWeatherData(city: string) {
 
     return(
             <>
-            <form  onSubmit={handleSubmit}>
-            <label>Please enter your city:
+            <form className={styles.form}  onSubmit={handleSubmit}>
+              <div className={styles.inline}>
+            <label className={styles.textarea}>Please enter your city:
                 <input 
                 type="text" 
                 name="city" 
@@ -53,11 +55,12 @@ async function fetchWeatherData(city: string) {
                 onChange={handleSearch}
                 />
                 </label>
-                <button 
+                <button className={styles.button}
                 type="submit" 
                 value="search">
                     Search
                     </button>
+                    </div>
             </form>
             {error && <p>{error}</p>}
       {weather && (

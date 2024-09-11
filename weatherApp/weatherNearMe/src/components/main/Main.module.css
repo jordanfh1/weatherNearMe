@@ -1,0 +1,26 @@
+.form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  background:linear-gradient(90deg, rgba(22,14,153,1) 0%, rgba(87,142,201,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+}
+
+.inline {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+.textarea {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.button {
+    background: rgb(27, 23, 23);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+}
