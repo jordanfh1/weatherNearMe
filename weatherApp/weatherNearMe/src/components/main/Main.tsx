@@ -34,7 +34,7 @@ async function fetchWeatherData(city: string) {
   }
 
 // handle form submission
-  const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (city.trim()) {
             fetchWeatherData(city);
@@ -44,7 +44,7 @@ async function fetchWeatherData(city: string) {
 
     return(
             <>
-            <form onSubmit={handleSubmit}>
+            <form  onSubmit={handleSubmit}>
             <label>Please enter your city:
                 <input 
                 type="text" 
