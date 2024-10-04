@@ -5,13 +5,12 @@ import styles from './Main.module.css';
 
 export default function Main() {
     const [city, setCity] = useState<string>("");
-    const [zipcode, setZipcode] = useState<string>("");
     const [weather, setWeather] = useState<any>(null);
     const [error, setError] = useState<string | null>(null);
     
 async function fetchWeatherData(city: string) {
     try {
-    const response = await api<any>(`https://api.openweathermap.org/data/2.5/weather?q=${city},${zipcode}&appid=e732cd12a2800fa58870a96de2329168&units=metric`)
+    const response = await api<any>(`https://api.openweathermap.org/data/2.5/weather?q=${city},&appid=e732cd12a2800fa58870a96de2329168&units=metric`)
     setWeather(response);
     setError(null);
 } catch (error) {
@@ -34,10 +33,7 @@ async function fetchWeatherData(city: string) {
   const handleSearchCity = (event: React.ChangeEvent<HTMLInputElement>) => {
      setCity(event.target.value);
         }
-        const handleSearchZip = (event: React.ChangeEvent<HTMLInputElement>) => {
-            setZipcode(event.target.value);
-        }
-
+       
 
 // handle form submission
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -51,6 +47,7 @@ async function fetchWeatherData(city: string) {
 
     return(
             <>
+            <div className={styles.function}>
             <form className={styles.form}  onSubmit={handleSubmit}>
             <label className={styles.textarea}>Please enter your city:
                 <input 
@@ -60,14 +57,7 @@ async function fetchWeatherData(city: string) {
                 onChange={handleSearchCity}
                 />
                 </label>
-                <label className={styles.textarea}>Please enter your postcode:
-                <input 
-                type="text" 
-                name="zipcode" 
-                value={zipcode}
-                onChange={handleSearchZip}
-                />
-                </label>
+                
                 <button className={styles.button}
                 type="submit" 
                 value="search">
@@ -76,12 +66,13 @@ async function fetchWeatherData(city: string) {
             </form>
             {error && <p>{error}</p>}
       {weather && (
-        <div>
+        <div className={styles.weatherContainer}>
           <h3>Weather in {weather.name}</h3>
           <p>Temperature: {weather.main.temp}C</p>
           <p>Weather: {weather.weather[0].description}</p>
         </div>
       )}
+      </div>
             </>
         )
 }
