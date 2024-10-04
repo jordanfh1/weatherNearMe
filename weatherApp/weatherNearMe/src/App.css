@@ -1,6 +1,6 @@
-/* App.css */
 
-/* General styling for the app container */
+
+
 .appContainer {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   color: #000000;
 }
 
-/* Header styling */
+
 .header {
   background-color: #007bff;
   color: white;
@@ -24,7 +24,7 @@
   z-index: 1000;
 }
 
-/* Main content styling */
+
 .main {
   flex-grow: 1;
   padding: 20px;
@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-/* Footer styling */
+
 .footer {
   background-color: #609c9d;
   color: white;
@@ -45,7 +45,7 @@
   width: 100%;
 }
 
-/* Footer links */
+
 .footer a {
   color: #007bff;
   text-decoration: none;
@@ -57,7 +57,7 @@
   text-decoration: underline;
 }
 
-/* Responsive layout for smaller screens */
+
 @media (max-width: 768px) {
   .header {
     font-size: 20px;
