@@ -1,2 +1,0 @@
-# weatherNearMe
-A weather app
