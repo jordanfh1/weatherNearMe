@@ -1,9 +1,9 @@
-/* Main.module.css */
+
 .function{
   display:flex;
   flex-direction: column;
 }
-/* General form styling */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -16,14 +16,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Label styling */
 .textarea {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #333;
 }
 
-/* Input styling */
+
 input[type="text"] {
   width: 93%;
   padding: 12px;
@@ -34,13 +33,13 @@ input[type="text"] {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* Input focus effect */
+
 input[type="text"]:focus {
   border-color: #007bff;
   outline: none;
 }
 
-/* Button styling */
+
 .button {
   padding: 12px;
   background-color: #007bff;
@@ -52,7 +51,6 @@ input[type="text"]:focus {
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* Button hover and active effect */
 .button:hover {
   background-color: #0056b3;
 }
@@ -61,10 +59,7 @@ input[type="text"]:focus {
   transform: scale(0.98);
 }
 
-/* Weather display */
-/* Main.module.css */
 
-/* Weather container styling */
 .weatherContainer {
   background-color: #ffffff;
   padding: 20px;
@@ -76,41 +71,40 @@ input[type="text"]:focus {
   font-family: 'Arial', sans-serif;
 }
 
-/* Heading styling */
+
 .weatherContainer h3 {
   font-size: 24px;
   color: #007bff;
   margin-bottom: 10px;
 }
 
-/* Paragraph styling */
+
 .weatherContainer p {
   font-size: 18px;
   color: #333;
   margin: 5px 0;
 }
 
-/* Temperature styling (optional for emphasis) */
+
 .weatherContainer p:nth-child(2) {
   font-size: 20px;
   font-weight: bold;
   color: #ff5722;
 }
 
-/* Weather description styling */
+
 .weatherContainer p:nth-child(3) {
   font-size: 16px;
   color: #666;
   text-transform: capitalize;
 }
 
-/* Smooth transitions for hover effect */
+
 .weatherContainer:hover {
   transform: scale(1.02);
   transition: transform 0.2s ease-in-out;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .weatherContainer {
     padding: 15px;
@@ -138,14 +132,14 @@ p {
   line-height: 1.6;
 }
 
-/* Error message */
+
 .error {
   color: #ff0000;
   font-size: 14px;
   margin-top: 10px;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   .form {
     padding: 15px;
