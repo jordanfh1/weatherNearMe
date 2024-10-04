@@ -1,6 +1,6 @@
 # Welcome! ☁🌡
 
-This is my little weather app I build in typescript
+This is my little weather app I built in typescript
 
 ## Instructions 
 - Clone down the repo
